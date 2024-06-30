@@ -1,0 +1,174 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: darkblue;
+    color: white;
+}
+header{
+    padding: 15px;
+    background-color: ba(0,rg 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+}
+.icon ion-icon{
+    width: 50px;
+    height: 50px;
+    color: red;
+}
+
+nav{
+    padding: 15px;
+}
+nav a{
+    text-decoration: none;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-weight: bold;
+    
+}
+.icons ion-icon{
+    width: 50px;
+    height: 50px;
+}
+#banner{
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.25);
+    background-image: url(./bg.webp);
+    background-size: cover;
+    display: grid;
+    place-items: center;
+}
+.text{
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    box-shadow: 0 0 10px greenyellow;
+    display: grid;
+    gap: 15px;
+    border-bottom: 5px solid white;
+    margin: 0 auto;
+}
+.section-title{
+    padding: 5px;
+    width: fit-content;
+    border-bottom:5px solid white;
+    margin: 0 auto;
+}
+.cars-images img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cars-images{
+    padding: 10px;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 150px 150px 150px;
+    grid-template-areas: 
+    "C1 C2"
+    "C1 C3"
+    "C5 C4"
+    "C5 C6";
+}
+.cars-images img:nth-child(1){
+    grid-area: C1;
+}
+.cars-images img:nth-child(2){
+    grid-area: C2;
+}
+.cars-images img:nth-child(3){
+    grid-area: C3;
+}
+.cars-images img:nth-child(4){
+    grid-area: C4;
+}
+.cars-images img:nth-child(5){
+    grid-area: C5 ;
+}
+.cars-images img:nth-child(6){
+    grid-area: C6 ;
+}
+#reviews{
+    padding: 15px;
+    background-color: brown;
+    display: grid;
+    gap: 25px;
+}
+.reviews-wrapper{
+    padding: 15px;
+    background-color: greenyellow;
+    border: 5px solid blueviolet;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 150px 150px 150px 150px;
+    grid-template-areas: 
+    "r1"
+    "r2"
+    "r3"
+    "r4"
+    "r5"
+    "r6";
+}
+.reviews-rating{
+    padding: 15px;
+    margin: 10px;
+    color: white;
+    background-color: darkcyan;
+    border: 4px solid white;
+    border-radius: 15px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+.reviews-rating h3{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    display: flex;
+    gap: 5px;
+}
+.rating ion-icon{
+    color: yellow;
+    font-size: 30px;
+}
+.reviews-rating img{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: 2px solid yellow;
+}
+.reviews-rating p{
+    font-size: 20px;
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+.reviews-rating:nth-child(1){
+    grid-area: r1;
+}
+.reviews-rating:nth-child(2){
+    grid-area: r2;
+}
+.reviews-rating:nth-child(3){
+    grid-area: r3;
+}
+.reviews-rating:nth-child(4){
+    grid-area: r4;
+}
+.reviews-rating:nth-child(5){
+    grid-area: r5;
+}
+.reviews-rating:nth-child(6){
+    grid-area: r6;
+}
+.footer{
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
